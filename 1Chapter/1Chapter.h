@@ -9,6 +9,9 @@ namespace LPQ {
     int SumOf2Max(std::istream &in, std::ostream &out);
     int CubeRoot(std::istream& in, std::ostream& out);
 
+    int FRecursion(std::istream &in, std::ostream &out);
+    int FIteration(std::istream& in, std::ostream& out);
+
     template<typename T,typename CompareFunctionType>
     void MakeOrder(T& l, T& r,CompareFunctionType&CompareOp)
     {

@@ -15,6 +15,8 @@ TestFuncMap InitFunctionalMap(void)
     map[std::string("SumOfMax_2")] = LPQ::SumOfMax<2>;
     map[std::string("SumOfMax_10")] = LPQ::SumOfMax<10>;
     map[std::string("CubeRoot")] = LPQ::CubeRoot;
+    map[std::string("FRecursion")] = LPQ::FRecursion;
+    map[std::string("FIteration")] = LPQ::FIteration;
     return map;
 }
 

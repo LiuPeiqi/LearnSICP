@@ -110,6 +110,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="1.11.cpp" />
     <ClCompile Include="1.3SumOfMax.cpp" />
     <ClCompile Include="1.8CubeRoot.cpp" />
     <ClCompile Include="main.cpp" />

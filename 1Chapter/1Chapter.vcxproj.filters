@@ -24,6 +24,9 @@
     <ClCompile Include="1.8CubeRoot.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="1.11.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="1Chapter.h">
