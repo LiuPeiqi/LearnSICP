@@ -12,6 +12,8 @@ namespace LPQ {
     int FRecursion(std::istream &in, std::ostream &out);
     int FIteration(std::istream& in, std::ostream& out);
 
+    int PascalTriangle(std::istream& in, std::ostream& out);
+    int PascalTriangleIterate(std::istream& in, std::ostream& out);
     template<typename T,typename CompareFunctionType>
     void MakeOrder(T& l, T& r,CompareFunctionType&CompareOp)
     {
