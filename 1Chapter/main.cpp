@@ -19,6 +19,7 @@ TestFuncMap InitFunctionalMap(void)
     map[std::string("FIteration")] = LPQ::FIteration;
     map[std::string("PascalTriangle")] = LPQ::PascalTriangle;
     map[std::string("PascalTriangleIterate")] = LPQ::PascalTriangleIterate;
+    map[std::string("Sine")] = LPQ::Sine;
     return map;
 }
 

@@ -30,6 +30,9 @@
     <ClCompile Include="1.12Pascal%27s Triangle.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="1.15Sine.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="1Chapter.h">

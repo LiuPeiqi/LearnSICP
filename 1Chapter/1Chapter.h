@@ -14,6 +14,7 @@ namespace LPQ {
 
     int PascalTriangle(std::istream& in, std::ostream& out);
     int PascalTriangleIterate(std::istream& in, std::ostream& out);
+    int Sine(std::istream& in, std::ostream& out);
     template<typename T,typename CompareFunctionType>
     void MakeOrder(T& l, T& r,CompareFunctionType&CompareOp)
     {
