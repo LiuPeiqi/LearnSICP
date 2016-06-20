@@ -33,6 +33,18 @@
     <ClCompile Include="1.15Sine.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="1.16FastExpt.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="1.21SmallestDivisor.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="1.22SearchFroPrimes.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="1.29Integral.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="1Chapter.h">

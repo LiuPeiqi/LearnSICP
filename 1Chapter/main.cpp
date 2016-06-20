@@ -20,6 +20,12 @@ TestFuncMap InitFunctionalMap(void)
     map[std::string("PascalTriangle")] = LPQ::PascalTriangle;
     map[std::string("PascalTriangleIterate")] = LPQ::PascalTriangleIterate;
     map[std::string("Sine")] = LPQ::Sine;
+    map[std::string("FastExpt")] = LPQ::FastExpt;
+    map[std::string("IsPrime")] = LPQ::IsPrime;
+    map[std::string("SmallestDivisor")] = LPQ::SmallestDivisor;
+    map[std::string("SearchForPrimes")] = LPQ::SearchForPrimes;
+    map[std::string("IntegralCube")] = LPQ::IntegralCube;
+    map[std::string("SimpsonIntegralCube")] = LPQ::SimpsonIntegralCube;
     return map;
 }
 

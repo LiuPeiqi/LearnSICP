@@ -14,7 +14,19 @@ namespace LPQ {
 
     int PascalTriangle(std::istream& in, std::ostream& out);
     int PascalTriangleIterate(std::istream& in, std::ostream& out);
+
     int Sine(std::istream& in, std::ostream& out);
+
+    int FastExpt(std::istream& in, std::ostream& out);
+
+    int SmallestDivisor(std::istream& in, std::ostream& out);
+    int IsPrime(std::istream&in, std::ostream& out);
+
+    int SearchForPrimes(std::istream&in, std::ostream&out);
+        
+    int IntegralCube(std::istream& in, std::ostream& out);
+    int SimpsonIntegralCube(std::istream& in, std::ostream& out);
+    
     template<typename T,typename CompareFunctionType>
     void MakeOrder(T& l, T& r,CompareFunctionType&CompareOp)
     {

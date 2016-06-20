@@ -113,6 +113,10 @@
     <ClCompile Include="1.11.cpp" />
     <ClCompile Include="1.12Pascal%27s Triangle.cpp" />
     <ClCompile Include="1.15Sine.cpp" />
+    <ClCompile Include="1.16FastExpt.cpp" />
+    <ClCompile Include="1.21SmallestDivisor.cpp" />
+    <ClCompile Include="1.22SearchFroPrimes.cpp" />
+    <ClCompile Include="1.29Integral.cpp" />
     <ClCompile Include="1.3SumOfMax.cpp" />
     <ClCompile Include="1.8CubeRoot.cpp" />
     <ClCompile Include="main.cpp" />
