@@ -27,6 +27,8 @@ namespace LPQ {
     int IntegralCube(std::istream& in, std::ostream& out);
     int SimpsonIntegralCube(std::istream& in, std::ostream& out);
     
+    int PI(std::istream&, std::ostream&);
+
     template<typename T,typename CompareFunctionType>
     void MakeOrder(T& l, T& r,CompareFunctionType&CompareOp)
     {

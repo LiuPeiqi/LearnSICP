@@ -45,6 +45,9 @@
     <ClCompile Include="1.29Integral.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="1.31Product.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="1Chapter.h">
