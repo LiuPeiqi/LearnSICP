@@ -27,6 +27,8 @@ TestFuncMap InitFunctionalMap(void)
     map[std::string("IntegralCube")] = LPQ::IntegralCube;
     map[std::string("SimpsonIntegralCube")] = LPQ::SimpsonIntegralCube;
     map[std::string("PI")] = LPQ::PI;
+    map[std::string("PrimeSum")] = LPQ::PrimeSum;
+    map[std::string("CoPrimeProduct")] = LPQ::CoPrimeProduct;
     return map;
 }
 

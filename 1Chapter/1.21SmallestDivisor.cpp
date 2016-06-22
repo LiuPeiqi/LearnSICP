@@ -38,6 +38,9 @@ namespace LPQ {
 
     bool IsPrime(long long n)
     {
+        if (n < 3) {
+            return false;
+        }
         return n == SmallestDivisor(n);
     }
     

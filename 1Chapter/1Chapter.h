@@ -29,6 +29,9 @@ namespace LPQ {
     
     int PI(std::istream&, std::ostream&);
 
+    int PrimeSum(std::istream& in, std::ostream& out);
+    int CoPrimeProduct(std::istream& in, std::ostream& out);
+    
     template<typename T,typename CompareFunctionType>
     void MakeOrder(T& l, T& r,CompareFunctionType&CompareOp)
     {

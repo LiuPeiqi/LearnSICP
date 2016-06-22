@@ -118,6 +118,7 @@
     <ClCompile Include="1.22SearchFroPrimes.cpp" />
     <ClCompile Include="1.29Integral.cpp" />
     <ClCompile Include="1.31Product.cpp" />
+    <ClCompile Include="1.32Accumulate.cpp" />
     <ClCompile Include="1.3SumOfMax.cpp" />
     <ClCompile Include="1.8CubeRoot.cpp" />
     <ClCompile Include="main.cpp" />
