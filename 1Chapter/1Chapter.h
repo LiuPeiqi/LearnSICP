@@ -32,7 +32,9 @@ namespace LPQ {
     int PrimeSum(std::istream& in, std::ostream& out);
     int CoPrimeProduct(std::istream& in, std::ostream& out);
     
-    template<typename T,typename CompareFunctionType>
+	int ContFrac(std::istream& in, std::ostream&out);
+
+	template<typename T,typename CompareFunctionType>
     void MakeOrder(T& l, T& r,CompareFunctionType&CompareOp)
     {
         if (CompareOp(r,l)) {
