@@ -54,6 +54,12 @@
     <ClCompile Include="1.37ContinueFraction.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="1.38eContFrac.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="1.39TanCf.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="1Chapter.h">

@@ -30,6 +30,8 @@ TestFuncMap InitFunctionalMap(void)
     map[std::string("PrimeSum")] = LPQ::PrimeSum;
     map[std::string("CoPrimeProduct")] = LPQ::CoPrimeProduct;
 	map[std::string("ContFrac")] = LPQ::ContFrac;
+	map[std::string("eContFrac")] = LPQ::eContFrac;
+	map[std::string("TanCf")] = LPQ::TanCf;
     return map;
 }
 
