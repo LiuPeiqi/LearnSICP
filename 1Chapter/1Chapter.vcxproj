@@ -123,6 +123,7 @@
     <ClCompile Include="1.38eContFrac.cpp" />
     <ClCompile Include="1.39TanCf.cpp" />
     <ClCompile Include="1.3SumOfMax.cpp" />
+    <ClCompile Include="1.44Smooth.cpp" />
     <ClCompile Include="1.8CubeRoot.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>

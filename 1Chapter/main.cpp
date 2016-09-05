@@ -32,6 +32,8 @@ TestFuncMap InitFunctionalMap(void)
 	map[std::string("ContFrac")] = LPQ::ContFrac;
 	map[std::string("eContFrac")] = LPQ::eContFrac;
 	map[std::string("TanCf")] = LPQ::TanCf;
+	map[std::string("RepeatedSquare")] = LPQ::RepeatedSquare;
+	map[std::string("RepeatedSmooth")] = LPQ::RepeatedSmooth;
     return map;
 }
 

@@ -48,6 +48,8 @@ namespace LPQ {
             std::swap(l, r);
         }
     }
+	int RepeatedSquare(std::istream& in, std::ostream& out);
+	int RepeatedSmooth(std::istream& in, std::ostream& out);
 
     template<typename Container,typename OrderFunctionType>
     void BuildHeap(Container& v, OrderFunctionType Order)
