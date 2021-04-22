@@ -1,3 +1,0 @@
-#include <chrono>
-namespace LPQ {
-}

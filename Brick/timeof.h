@@ -11,21 +11,29 @@ static double Cost(const std::string& token,
     return cost_count;
 }
 
-template <typename Func, typename... Args>
-double timeof(const std::string& token, const Func& func, const Args&... args) {
-    auto start = std::chrono::high_resolution_clock::now();
-    func(args...);
-    auto finish = std::chrono::high_resolution_clock::now();
-    return Cost(token, finish - start);
+template <typename Ret, typename... Args>
+std::function<Ret(Args...)> timeof(const std::string& token,
+                                   Ret (*func)(Args...)) {
+    return [=](Args... args) {
+        auto start = std::chrono::high_resolution_clock::now();
+        Ret result = func(args...);
+        auto finish = std::chrono::high_resolution_clock::now();
+        Cost(token, finish - start);
+        return result;
+    };
 }
 
-// template <typename Func>
-// double timeof(const std::string& token, const Func& func) {
-//     auto start = std::chrono::high_resolution_clock::now();
-//     func();
-//     auto finish = std::chrono::high_resolution_clock::now();
-//     return Cost(token, finish - start);
-// }
+template <typename Ret, typename... Args>
+std::function<Ret(Args...)> timeof(const std::string& token,
+                                   const std::function<Ret(Args...)>& func) {
+    return [=](Args... args) {
+        auto start = std::chrono::high_resolution_clock::now();
+        Ret result = func(args...);
+        auto finish = std::chrono::high_resolution_clock::now();
+        Cost(token, finish - start);
+        return result;
+    };
+}
 
 }  // namespace LPQ
 
