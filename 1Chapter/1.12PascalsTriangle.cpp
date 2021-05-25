@@ -62,8 +62,8 @@ int PascalTriangleIterate(unsigned int n) {
     return 0;
 }
 
-RegisterFunc reg_fun1("PascalTriangle", ParserBind(PascalTriangle));
-RegisterFunc reg_fun2("PascalTriangleIterate",
+static RegisterFunc reg_fun1("PascalTriangle", ParserBind(PascalTriangle));
+static RegisterFunc reg_fun2("PascalTriangleIterate",
                       ParserBind(PascalTriangleIterate));
 
 }  // namespace LPQ

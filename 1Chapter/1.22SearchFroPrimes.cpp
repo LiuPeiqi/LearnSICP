@@ -8,7 +8,6 @@
 #include "Brick/parser_bind.h"
 
 namespace LPQ {
-extern bool IsPrime(long long n);
 bool IsEven(long long n) { return n % 2 == 0; }
 
 long long Square(long long x) { return x * x; }
@@ -26,7 +25,7 @@ long long Expmod(long long base, long long exp, long long n) {
 bool FermatTest(long long n) {
     static std::default_random_engine e;
     std::uniform_int_distribution<unsigned long long> u(0, n);
-    auto rand = u(e) + 1;
+    auto rand = static_cast<long long>(u(e) + 1);
     return Expmod(rand, n, n) == rand;
 }
 
@@ -40,9 +39,13 @@ bool IsPrimeFast(long long n, long long times) {
     }
 }
 
-bool IsPrimeFast10Times(long long n) { return IsPrimeFast(n, 10); }
+template <size_t times>
+bool IsPrimeFast(long long n) {
+    return IsPrimeFast(n, times);
+}
 
 typedef std::function<bool(long long)> IsPrimeTemplate;
+
 class Find1stPrime {
    public:
     Find1stPrime(IsPrimeTemplate IsPrimeT) : is_prime(IsPrimeT) {}
@@ -77,8 +80,10 @@ class FindNPrimes {
     const Find1stPrime& find_1st_prime;
 };
 
+extern bool IsPrime(long long number);
+
 bool SearchForPrimes(long long number, size_t n, std::string which) {
-    Find1stPrime fast(IsPrimeFast10Times);
+    Find1stPrime fast(IsPrimeFast<10>);
     Find1stPrime normal(IsPrime);
     const Find1stPrime& real = which == "fast" ? fast : normal;
     const FindNPrimes find_n_primes(real);

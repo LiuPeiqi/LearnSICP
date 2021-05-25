@@ -18,12 +18,6 @@ class RegisterFunc {
     RegisterFunc(const std::string& name, const FuncWrap& func);
 };
 
-typedef std::function<double(double)> NextFuc;
-inline double NoOperate(double x) { return x; }
-double ComContFrac(NextFuc next_n, double n, NextFuc next_d, double d,
-                   size_t k);
-int eContFrac(std::istream& in, std::ostream& out);
-int TanCf(std::istream& in, std::ostream& out);
 template <typename T, typename CompareFunctionType>
 void MakeOrder(T& l, T& r, CompareFunctionType& CompareOp) {
     if (CompareOp(r, l)) {

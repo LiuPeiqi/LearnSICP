@@ -36,7 +36,7 @@ size_t FibIter(size_t a, size_t b, size_t p, size_t q, size_t count) {
 
 size_t Fib(size_t n) { return FibIter(1, 0, 0, 1, n); }
 
-void MulTrans(size_t& p1, size_t& q1, size_t p2, size_t q2) {
+inline void MulTrans(size_t& p1, size_t& q1, size_t p2, size_t q2) {
     auto pp = p1 * p2;
     auto qq = q1 * q2;
     q1 = p1 * q2 + p2 * q1 + qq;
@@ -57,7 +57,7 @@ size_t Fib2(size_t n) {
     return p;
 }
 
-RegisterFunc reg_fun1("Fib1", ParserBind(timeof("Fib1", Fib)));
-RegisterFunc reg_fun2("Fib2", ParserBind(timeof("Fib2", Fib2)));
+static RegisterFunc reg_fun1("Fib1", ParserBind(timeof("Fib1", Fib)));
+static RegisterFunc reg_fun2("Fib2", ParserBind(timeof("Fib2", Fib2)));
 
 }  // namespace LPQ
