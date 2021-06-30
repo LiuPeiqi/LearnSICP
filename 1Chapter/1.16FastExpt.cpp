@@ -9,7 +9,7 @@
 //(define (fast-expt b n)
 //          (expt-internal 1 b 0 n))
 
-#include "1Chapter.h"
+#include "SICP.h"
 #include "Brick/parser_bind.h"
 
 namespace LPQ {

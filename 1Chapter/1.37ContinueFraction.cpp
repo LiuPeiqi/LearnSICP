@@ -10,7 +10,7 @@
 //			(result)))
 //	(inter 0 0)
 
-#include "1Chapter.h"
+#include "SICP.h"
 #include "Brick/parser_bind.h"
 
 namespace LPQ {

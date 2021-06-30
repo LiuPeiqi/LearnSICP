@@ -17,7 +17,7 @@
 
 #include <tuple>
 
-#include "1Chapter.h"
+#include "SICP.h"
 #include "Brick/parser_bind.h"
 #include "Brick/timeof.h"
 

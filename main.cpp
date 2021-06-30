@@ -2,7 +2,7 @@
 #include <iterator>
 #include <string>
 
-#include "1Chapter.h"
+#include "SICP.h"
 
 LPQ::FuncWrapMap& GetMap() {
     static LPQ::FuncWrapMap func_map;

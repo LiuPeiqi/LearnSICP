@@ -7,7 +7,7 @@
 //
 // log(10x)/log(3);
 
-#include "1Chapter.h"
+#include "SICP.h"
 #include "Brick/parser_bind.h"
 
 namespace LPQ {
